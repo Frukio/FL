@@ -1,0 +1,60 @@
+.header {
+    position: absolute;
+    top: auto;
+    z-index: 15;
+    width: 100%;
+    color: #fff;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    &__logo {
+        @media (max-width: 420px) {
+            max-width: 120px;
+            
+        }
+    }
+
+    &__option {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__button {
+        padding: 18px 46px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        border: 1px solid #FFFFFF;
+        border-radius: 39px;
+        background-color: transparent;
+
+        @media (max-width: 576px) {
+            padding: 18px 29px;
+        }
+
+        @media (max-width: 420px) {
+            padding: 12px 20px;
+        }
+        
+    }
+
+    &__burger {
+        display: none;
+        max-height: 55px;
+        max-width: 65px;
+        margin-left: 20px;
+        fill: #FFFFFF;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+    }
+
+    
+}

@@ -1,0 +1,24 @@
+.contact {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 15px;
+    }
+
+    &__title {
+        text-transform: uppercase;
+    }
+
+    &__label input {
+        padding: 14px 28px;
+        background-color: #EFEFEF;
+        border: 1px solid #D0D0D0;
+        border-radius: 6px;
+    }
+
+    &__button {
+        background-color: #03D6F3;
+        text-transform: uppercase;
+    }
+}
