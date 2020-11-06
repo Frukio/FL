@@ -16,7 +16,10 @@
         }
 
         &:nth-child(2) .offer__desc {
-            display: none;
+
+            @media (max-width: 576px) {
+                display: none;
+            }
         }
     }
 

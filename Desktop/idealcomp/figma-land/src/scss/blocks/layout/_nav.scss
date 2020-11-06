@@ -28,5 +28,49 @@
 }
 
 .nav-mob {
-    display: none;
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 15px 40px 15px;
+    
+    background-color: violet;
+    border-radius: 0 0 0 10px;
+    transition: 0.8s;
+
+    @media (max-width: 576px) {
+        max-width: 60%;
+    }
+
+    &--active {
+        right: 0;
+        transition: 0.4s;
+    }
+
+    &__elem {
+        padding: 20px 0;
+        font-size: 20px;
+        text-align: center;
+
+        &:hover {
+            opacity: 0.5;
+            transition: 0.2s ease-in-out all;
+        }
+    }
+
+
+    &__link {
+        padding: 20px 100px;
+
+        @media (max-width: 576px) {
+            padding: 18px 50px;
+        }
+
+        &:hover {
+        
+            text-decoration: none;
+        }
+    }
 }
